@@ -1,4 +1,4 @@
-﻿package ru.kfu.itis.issst.denis;
+package ru.kfu.itis.issst.denis;
 
 import org.apache.uima.UIMAException;
 
@@ -20,7 +20,6 @@ import ru.kfu.itis.cll.uima.consumer.XmiWriter;
 import ru.kfu.itis.cll.uima.cpe.XmiCollectionReader;
 
 import static org.apache.uima.fit.factory.AnalysisEngineFactory.createEngine;
-
 
 public class Application {
 
