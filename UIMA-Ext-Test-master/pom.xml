@@ -6,7 +6,7 @@
         <artifactId>uima-ext-root-aggregate</artifactId>
         <groupId>ru.ksu.niimm.cll.uima</groupId>
         <version>0.5-SNAPSHOT</version>
-        <relativePath>../../Downloads/UIMA-Ext-master/UIMA-Ext-master/pom.xml</relativePath>
+        <relativePath>../UIMA-Ext-Test-master/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
