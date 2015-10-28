@@ -1,4 +1,4 @@
-package ru.kfu.itis.issst.denis;
+﻿package ru.kfu.itis.issst.denis;
 
 import org.apache.uima.UIMAException;
 
@@ -44,9 +44,9 @@ public class Application {
 
             AnalysisEngine writer = AnalysisEngineFactory.createEngine(writerDesc); // по дескриптору writerDesc
 
-            AnalysisEngine pipelineEngine = createEngine("ru.kfu.itis.issst.uima.demo.lemmatizer-pipeline");
+            AnalysisEngine pipelineEngine = createEngine("ru.kfu.itis.issst.denis.pipeline");
 
-//          AnalysisEngine pipelineEngine = createEngine("ru.kfu.itis.issst.denis.pipeline");
+//          AnalysisEngine pipelineEngine = createEngine("ru.kfu.itis.issst.uima.demo.lemmatizer-pipeline");  // он тоже не работает
 
             try {
                 SimplePipeline.runPipeline(collectionReader, pipelineEngine, writer);
