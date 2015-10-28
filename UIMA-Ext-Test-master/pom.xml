@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>uima-ext-root-aggregate</artifactId>
+        <groupId>ru.ksu.niimm.cll.uima</groupId>
+        <version>0.5-SNAPSHOT</version>
+        <relativePath>../../Downloads/UIMA-Ext-master/UIMA-Ext-master/pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>Uima-Ext-Test</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>ru.ksu.niimm.cll.uima</groupId>
+            <artifactId>uima-ext-commons</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>ru.ksu.niimm.cll.uima</groupId>
+            <artifactId>uima-ext-sentence-splitter-heuristic</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>ru.ksu.niimm.cll.uima</groupId>
+            <artifactId>uima-ext-lemmatizer-opencorpora</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>ru.ksu.niimm.cll.uima</groupId>
+            <artifactId>uima-ext-demo-pipeline-example</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>ru.ksu.niimm.cll.uima</groupId>
+            <artifactId>uima-ext-sentence-splitter-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.uima</groupId>
+            <artifactId>uimafit-core</artifactId>
+            <version>2.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>ru.ksu.niimm.cll.uima</groupId>
+            <artifactId>uima-ext-tokenizer-simple</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>
