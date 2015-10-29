@@ -7,12 +7,18 @@ import org.apache.uima.util.InvalidXMLException;
 import org.xml.sax.SAXException;
 
 import java.io.IOException;
+import java.util.Scanner;
 
 /**
  * Created by Денис on 27.10.2015.
  */
 public class Main {
     public static void main(String[] args) throws AnalysisEngineProcessException, InvalidXMLException, CpeDescriptorException, IOException, SAXException, ResourceInitializationException {
-        Application app = new Application();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите входную директорию");
+        String in = sc.next();
+        System.out.println("Введите выходную директорию");
+        String out = sc.next();
+        Application app = new Application(in, out);
     }
 }

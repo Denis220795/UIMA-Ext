@@ -23,7 +23,13 @@ import static org.apache.uima.fit.factory.AnalysisEngineFactory.createEngine;
 
 public class Application {
 
-        Application() throws InvalidXMLException, ResourceInitializationException, IOException, AnalysisEngineProcessException, CpeDescriptorException, SAXException {
+    private String InputDir, OutputDir;
+
+        Application(String input, String output) throws InvalidXMLException, ResourceInitializationException, IOException, AnalysisEngineProcessException, CpeDescriptorException, SAXException {
+            InputDir=input;
+            OutputDir=output;
+//            System.setProperty("datapath", "");
+            System.out.println("Директории назначены");
             initialize();
         }
 
@@ -32,14 +38,14 @@ public class Application {
             CollectionReaderDescription readerDescription =
                     CollectionReaderFactory.createReaderDescription(
                             XmiCollectionReader.class,
-                            XmiCollectionReader.PARAM_INPUTDIR, "D:\\Input_Dict");
+                            XmiCollectionReader.PARAM_INPUTDIR, InputDir);
 
             CollectionReader collectionReader = CollectionReaderFactory.createReader(readerDescription); // по дескриптору readerDescription
 
             AnalysisEngineDescription writerDesc =
                     AnalysisEngineFactory.createEngineDescription(
                             XmiWriter.class,
-                            XmiWriter.PARAM_OUTPUTDIR, "D:\\Output_Dict");
+                            XmiWriter.PARAM_OUTPUTDIR, OutputDir);
 
             AnalysisEngine writer = AnalysisEngineFactory.createEngine(writerDesc); // по дескриптору writerDesc
 

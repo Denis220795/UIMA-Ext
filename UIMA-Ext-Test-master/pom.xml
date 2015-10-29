@@ -19,15 +19,19 @@
         </dependency>
         <dependency>
             <groupId>ru.ksu.niimm.cll.uima</groupId>
+            <artifactId>uima-ext-morph-dictionary-opencorpora</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>ru.ksu.niimm.cll.uima</groupId>
+            <artifactId>uima-ext-pos-tagger-opennlp</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>ru.ksu.niimm.cll.uima</groupId>
             <artifactId>uima-ext-sentence-splitter-heuristic</artifactId>
         </dependency>
         <dependency>
             <groupId>ru.ksu.niimm.cll.uima</groupId>
             <artifactId>uima-ext-lemmatizer-opencorpora</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>ru.ksu.niimm.cll.uima</groupId>
-            <artifactId>uima-ext-demo-pipeline-example</artifactId>
         </dependency>
         <dependency>
             <groupId>ru.ksu.niimm.cll.uima</groupId>
@@ -57,7 +61,6 @@
         <dependency>
             <groupId>ru.ksu.niimm.cll.uima</groupId>
             <artifactId>uima-ext-tokenizer-simple</artifactId>
-            <scope>test</scope>
         </dependency>
     </dependencies>
 </project>
