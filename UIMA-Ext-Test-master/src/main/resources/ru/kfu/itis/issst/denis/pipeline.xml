@@ -63,7 +63,7 @@
 				<name>MorphDictionary</name>
 				<description/>
 				<fileResourceSpecifier>
-					<fileUrl>file:out.dict.opcorpora</fileUrl>
+					<fileUrl>file:dict.opcorpora.ser</fileUrl>
 				</fileResourceSpecifier>
 				<implementationName>ru.ksu.niimm.cll.uima.morph.opencorpora.resource.CachedSerializedDictionaryResource</implementationName>
 			</externalResource>

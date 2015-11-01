@@ -28,7 +28,6 @@ public class Application {
         Application(String input, String output) throws InvalidXMLException, ResourceInitializationException, IOException, AnalysisEngineProcessException, CpeDescriptorException, SAXException {
             InputDir=input;
             OutputDir=output;
-//            System.setProperty("datapath", "");
             System.out.println("Директории назначены");
             initialize();
         }
@@ -50,8 +49,6 @@ public class Application {
             AnalysisEngine writer = AnalysisEngineFactory.createEngine(writerDesc); // по дескриптору writerDesc
 
             AnalysisEngine pipelineEngine = createEngine("ru.kfu.itis.issst.denis.pipeline");
-
-//          AnalysisEngine pipelineEngine = createEngine("ru.kfu.itis.issst.uima.demo.lemmatizer-pipeline");  // он тоже не работает
 
             try {
                 SimplePipeline.runPipeline(collectionReader, pipelineEngine, writer);
